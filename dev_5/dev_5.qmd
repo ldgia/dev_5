@@ -61,7 +61,7 @@ hawai_test <- hawai |>
 #seulement un année sort, 1958, car le jeu de donnée commmence en mars!
 ```
 
-Dans ce travail, un jeu de données fourni est analysé afin de voir l'évolution des concentrations au fil du temps. Des modèles de prédiction de la concentration en dioxyde de carbone sont utilisés pour prédire les concentrations futures. Ce jeu de données contient des données allant de 1958 à 2001.
+Dans ce travail, un jeu de données fourni est analysé afin de voir l'évolution des concentrations en dioxyde de carbone au fil du temps. Des modèles de prédiction de la concentration en dioxyde de carbone sont utilisés pour prédire les concentrations futures. Ce jeu de données contient des données allant de 1958 à 2001.
 
 ```{r}
 hawai_time <- hawai |> 
@@ -80,7 +80,7 @@ hawai_time |>
 
 ## Visuelle
 
-Pour débuter, une analyse visuelle de la série temporelle peut aider à détecter divers comportements des données. À la @fig-serie_tempo, il est possible de remarquer une tendance à la hausse dans nos données. La concentration en dioxyde de carbone augmente pendant la période de temps, allant de 1958 à 2001. C'est une tendance à la hausse. La ligne bleue représente les fluctuations dans le temps.
+Pour débuter, une analyse visuelle de la série temporelle peut aider à détecter divers comportements des données. À la @fig-serie_tempo, il est possible de remarquer une tendance à la hausse. La concentration en dioxyde de carbone augmente pendant la période de temps, allant de 1958 à 2001. La ligne bleue représente les fluctuations dans le temps.
 
 Il semble aussi avoir des variations saisonnières, ce qui est visible par les fluctuations annuelles qui sont présentes à la @fig-serie_tempo.
 
@@ -96,7 +96,7 @@ gg_season(CO2, polar = TRUE) +
   )
 ```
 
-La @fig-season_fluctuation permet de voir plusieurs choses. Il est possible de voir qu'avec les années, que les valeurs ne semblent pas revenir à des valeurs plus faibles. La tendance est à la hausse.
+La @fig-season_fluctuation permet de voir plusieurs choses. Il est possible de voir qu'avec les années, que les valeurs ne semblent pas revenir à des valeurs plus faibles.
 
 La lecture de la @fig-season_fluctuation peut être difficile. Voici un graphique qui représente les années, terminant par 0 et par 5 comprises en 1958 et 2001, pour faciliter la lecture:
 
